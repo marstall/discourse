@@ -20,7 +20,7 @@
   <span class='link-top-line'>
     {{~raw-plugin-outlet name="topic-list-before-status"}}
     {{~raw "topic-status" topic=topic}}
-    {{~topic-link topic class="raw-link raw-topic-link"}}
+     {{dir-span topic.title htmlSafe="true"}}
     {{~#if topic.featured_link}}
       {{~topic-featured-link topic}}
     {{~/if}}
